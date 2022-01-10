@@ -1,10 +1,15 @@
 # Learn Go
 
-### Go Generics
-The generics feature is available in Beta 1. To install the beta, go to page https://go.dev/doc/tutorial/generics
-
+## go 1.18 beta
+To install the beta, go to page https://go.dev/doc/tutorial/generics
 To run the program:
 > go1.18beta1 run main.go
 
+### Go Generics
+The generics feature is available in 1.18 
 
-<b>Replacing interface{} with any</b>
+### interface
+We can use any instead of interface{} in 1.18
+
+
+
