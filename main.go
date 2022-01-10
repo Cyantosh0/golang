@@ -1,18 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	go_beta "github.com/Cyantosh0/golang/go_1.18"
+)
 
 func main() {
-	Display(fmt.Sprintf("Generic Sums: %v and %v",
-		SumIntsOrFloats(34,12),
-		SumIntsOrFloats(35.98,26.99)))
+
+	workWithGoBeta()
 }
 
-func SumIntsOrFloats[T int | float64](a, b T) T {
-	return a+b
+func workWithGoBeta() {
+	go_beta.Display(fmt.Sprintf("Generic Sums: %v and %v",
+		go_beta.SumIntsOrFloats(34, 12),
+		go_beta.SumIntsOrFloats(35.98, 26.99)))
 }
-
-func Display(data any) {
-	fmt.Println(data)
-}
-
