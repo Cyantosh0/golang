@@ -4,22 +4,12 @@ import (
 	"fmt"
 
 	"github.com/Cyantosh0/golang/enums"
+	//go_beta "github.com/Cyantosh0/golang/go_1.18"
 )
 
 func main() {
-	displayWeekDayDetails(enums.Mon)
+	fmt.Println("*** Working with Enums ***")
+	enums.Mon.DisplayWeekDayDetails()
 
-	// workWithGoBeta()
+	//go_beta.WorkWithGoBeta()
 }
-
-func displayWeekDayDetails(weekday enums.Weekday) {
-	fmt.Println(weekday)             // Prints : Monday
-	fmt.Println(weekday.String())    // Prints : Monday
-	fmt.Println(weekday.EnumIndex()) // Prints : 2
-}
-
-// func workWithGoBeta() {
-// 	go_beta.Display(fmt.Sprintf("Generic Sums: %v and %v",
-// 		go_beta.SumIntsOrFloats(34, 12),
-// 		go_beta.SumIntsOrFloats(35.98, 26.99)))
-// }

@@ -1,5 +1,7 @@
 package enums
 
+import "fmt"
+
 type Weekday int
 
 const (
@@ -20,4 +22,10 @@ func (w Weekday) String() string {
 // EnumIndex - Creating common behavior - give the type a EnumIndex function
 func (w Weekday) EnumIndex() int {
 	return int(w)
+}
+
+func (w Weekday) DisplayWeekDayDetails() {
+	fmt.Println(w)             // Prints : Monday
+	fmt.Println(w.String())    // Prints : Monday
+	fmt.Println(w.EnumIndex()) // Prints : 2
 }
