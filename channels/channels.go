@@ -1,6 +1,9 @@
 package channels
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func UnbufferedChannels() {
 	messages := make(chan string)
@@ -21,4 +24,12 @@ func BufferedChannels() {
 	fmt.Println(<-messages) // Prints : apple
 	fmt.Println(<-messages) // Prints : banana
 	// fmt.Println(<-messages) // fatal error: all goroutines are asleep - deadlock!
+}
+
+func Worker(done chan bool) {
+	fmt.Print("working...")
+	time.Sleep(time.Second)
+	fmt.Println("done")
+
+	done <- true // Send a value to notify that we’re done
 }

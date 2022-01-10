@@ -18,5 +18,14 @@ func main() {
 	fmt.Println("\n*** Working with buffered channels ***")
 	channels.BufferedChannels()
 
+	fmt.Println("\n*** Working with Channel Synchronization ***")
+	done := make(chan bool, 1)
+	go channels.Worker(done)
+
+	/* Block until we receive a notification from the worker on the channel
+	If removed, the program would exit before the worker even started.
+	*/
+	<-done
+
 	//go_beta.WorkWithGoBeta()
 }
