@@ -12,4 +12,7 @@ The generics feature is available in 1.18
 We can use any instead of interface{} in 1.18
 
 
+## Implementing Enums in Golang
+Golang does not support enums directly. We can implement it using <b>iota</b> and <b>constants</b>.
+
 
