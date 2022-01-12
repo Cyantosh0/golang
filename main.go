@@ -46,5 +46,8 @@ func main() {
 	fmt.Println("\n*** Working with Worker Pools ***")
 	channels.WorkerPools()
 
+	fmt.Println("\n*** Working with Wait Group ***")
+	channels.WaitGroup()
+
 	//go_beta.WorkWithGoBeta()
 }
