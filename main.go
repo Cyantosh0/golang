@@ -34,5 +34,8 @@ func main() {
 	channels.RecieveAndSendMessageWithInChannels(secondChannel, firstChannel)
 	fmt.Println(<-secondChannel)
 
+	fmt.Println("\n*** Working with Channel Select ***")
+	channels.SelectChannel()
+
 	//go_beta.WorkWithGoBeta()
 }
