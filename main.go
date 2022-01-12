@@ -43,5 +43,8 @@ func main() {
 	fmt.Println("\n*** Working with Range Over Channels ***")
 	channels.RangeOverChannels()
 
+	fmt.Println("\n*** Working with Worker Pools ***")
+	channels.WorkerPools()
+
 	//go_beta.WorkWithGoBeta()
 }
