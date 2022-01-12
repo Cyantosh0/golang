@@ -40,5 +40,8 @@ func main() {
 	fmt.Println("\n*** Working with Timeouts ***")
 	channels.ChannelTimeout()
 
+	fmt.Println("\n*** Working with Range Over Channels ***")
+	channels.RangeOverChannels()
+
 	//go_beta.WorkWithGoBeta()
 }
