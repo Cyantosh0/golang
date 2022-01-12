@@ -33,3 +33,12 @@ func Worker(done chan bool) {
 
 	done <- true // Send a value to notify that we’re done
 }
+
+func SendMessageToChannel(firstChannel chan<- string, msg string) {
+	firstChannel <- msg
+}
+
+func RecieveAndSendMessageWithInChannels(secondChannel chan<- string, firstChannel <-chan string) {
+	msg := <-firstChannel
+	secondChannel <- msg
+}

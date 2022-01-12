@@ -27,5 +27,12 @@ func main() {
 	*/
 	<-done
 
+	fmt.Println("\n*** Working with Channel Directions ***")
+	firstChannel := make(chan string, 1)
+	secondChannel := make(chan string, 1)
+	channels.SendMessageToChannel(firstChannel, "passed message")
+	channels.RecieveAndSendMessageWithInChannels(secondChannel, firstChannel)
+	fmt.Println(<-secondChannel)
+
 	//go_beta.WorkWithGoBeta()
 }
