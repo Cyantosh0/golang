@@ -37,5 +37,8 @@ func main() {
 	fmt.Println("\n*** Working with Channel Select ***")
 	channels.SelectChannel()
 
+	fmt.Println("\n*** Working with Timeouts ***")
+	channels.ChannelTimeout()
+
 	//go_beta.WorkWithGoBeta()
 }
