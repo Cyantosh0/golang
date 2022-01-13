@@ -5,10 +5,16 @@ import (
 
 	"github.com/Cyantosh0/golang/channels"
 	"github.com/Cyantosh0/golang/enums"
+	"github.com/Cyantosh0/golang/maps"
 	//go_beta "github.com/Cyantosh0/golang/go_1.18"
 )
 
 func main() {
+	maps.Maps()
+	// example()
+}
+
+func example() {
 	fmt.Println("*** Working with Enums ***")
 	enums.Mon.DisplayWeekDayDetails()
 
