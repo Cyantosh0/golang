@@ -10,7 +10,8 @@ import (
 )
 
 func main() {
-	runes.Runes()
+	fmt.Println(runes.GenerateRandomCode(5))
+	// runes.Runes()
 	// maps.Maps()
 	// interfaces.Interfaces()
 	// example()
