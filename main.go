@@ -5,13 +5,14 @@ import (
 
 	"github.com/Cyantosh0/golang/channels"
 	"github.com/Cyantosh0/golang/enums"
-	"github.com/Cyantosh0/golang/interfaces"
+	"github.com/Cyantosh0/golang/runes"
 	//go_beta "github.com/Cyantosh0/golang/go_1.18"
 )
 
 func main() {
+	runes.Runes()
 	// maps.Maps()
-	interfaces.Interfaces()
+	// interfaces.Interfaces()
 	// example()
 }
 
