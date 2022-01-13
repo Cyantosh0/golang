@@ -6,6 +6,9 @@ func Maps() {
 	// initialize map
 	m := make(map[string]int)
 
+	n := map[string]int{"n1": 1, "n2": 2}
+	fmt.Println("n:", n)
+
 	// Insert an element in map m
 	m["m1"] = 42
 	m["m2"] = 50

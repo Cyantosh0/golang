@@ -5,12 +5,13 @@ import (
 
 	"github.com/Cyantosh0/golang/channels"
 	"github.com/Cyantosh0/golang/enums"
-	"github.com/Cyantosh0/golang/maps"
+	"github.com/Cyantosh0/golang/interfaces"
 	//go_beta "github.com/Cyantosh0/golang/go_1.18"
 )
 
 func main() {
-	maps.Maps()
+	// maps.Maps()
+	interfaces.Interfaces()
 	// example()
 }
 
