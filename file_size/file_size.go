@@ -21,4 +21,9 @@ func FileSizeMB() {
 
 	// Convert back to MB
 	fmt.Println(MB20 >> 20) // 20
+
+	// Working with GB
+	var GB4 int64
+	GB4 = 4 * 1000 << 20 // 4GB
+	fmt.Println("4 GB to int64:", GB4)
 }
